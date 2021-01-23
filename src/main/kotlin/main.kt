@@ -51,7 +51,8 @@ fun main() {
                         peerId = event.message.peerId
                         message =
                             "Отправь /пёсик для того, чтобы получить фотографию пёсика." +
-                                    "\nОтправь /котик для того, чтобы получить фотографию котика.\nДля вывода этого сообщения напиши /помощь"
+                                    "\nОтправь /котик для того, чтобы получить фотографию котика." +
+                                    "\nДля вывода этого сообщения напиши /помощь"
                     }.execute()
                 }
                 else -> {
@@ -92,7 +93,7 @@ object Api {
     )
     val client = VkApiClient(
         id = 157005084,
-        token = "8da00fd33fd44c5130c2d9f4eaa95e2f8daa81da03df3bf916bfffc48ade48e3eea00f246a7b4edc6f00d",
+        token = "token",
         type = VkApiClient.Type.Community,
         settings = this.vkClientSettings
     )
