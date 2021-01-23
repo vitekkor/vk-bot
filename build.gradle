@@ -1,0 +1,22 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.4.21'
+    id 'org.jetbrains.kotlin.plugin.serialization' version '1.4.21'
+}
+
+group 'com.vitekkor'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+def vkSdkVersion = "0.0.7"
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    implementation "com.petersamokhin.vksdk:core:$vkSdkVersion"
+    implementation "com.petersamokhin.vksdk:http-client-common-ktor:$vkSdkVersion"
+    implementation "io.ktor:ktor-client-cio:1.5.0"
+    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.0.1'
+    implementation "io.ktor:ktor-client-serialization:1.5.0"
+}
